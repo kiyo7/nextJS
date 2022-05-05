@@ -22,9 +22,15 @@ const Layout: React.FC<Title> = ({ children, title = 'Nextjs' }) => {
               <HeaderLink path="/blog-page" testId="blog-nav" label="Blog" />
               <HeaderLink
                 path="/comment-page"
-                testId="home-nav"
+                testId="comment-nav"
                 label="Comment"
               />
+              <HeaderLink
+                path="/context-page"
+                testId="context-nav"
+                label="Context"
+              />
+
               <HeaderLink path="/task-page" testId="task-nav" label="Todos" />
             </div>
           </div>
