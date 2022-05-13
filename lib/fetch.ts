@@ -32,7 +32,7 @@ export const getAllPostIds = async () => {
 
 export const getPostData = async (id: string) => {
   const res = await fetch(
-    new URL(`https://jsonplaceholder.typicode.com/posts${id}`)
+    new URL(`https://jsonplaceholder.typicode.com/posts/${id}`)
   )
   const post = res.json()
   return post
